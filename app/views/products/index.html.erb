@@ -1,0 +1,11 @@
+
+<% if cart != [] && cart != nil%>
+  <% cart.each do |item| %>
+    <%= item %>
+  <% end %>
+<% end %>
+
+<%= form_tag products_add_path do%>
+<input type="text" name="name" id="product">
+<input type="submit" value="add to cart" id="add to cart">
+<% end %>
